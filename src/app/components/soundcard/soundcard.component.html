@@ -1,7 +1,9 @@
-<div class="card">
+<div class="card" >
   <div class="card-block">
-    <h2 class="card-title">Card title</h2>
+    <h2 class="card-title">{{soundName}}</h2>
   </div>
-  <button type="button" class="btn btn-outline-danger btn-lg btn-block"><i class="fa fa-play" aria-hidden="true"></i>
-</button>
+  <div class="row justify-content-center">
+    <button type="button" (click)="playAudio()" class="btn btn-outline-success btn-lg col-4"><i class="fa fa-play" aria-hidden="true"></i></button>
+    <button type="button" (click)="stopAudio()" class="btn btn-outline-danger btn-lg col-4"><i class="fa fa-stop" aria-hidden="true"></i></button>
+  </div>
 </div>

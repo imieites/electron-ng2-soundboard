@@ -10,8 +10,8 @@ export class AppComponent {
   title = 'SoundBoard';
 
   ngOnInit(){
-    let audio = new Audio('assets/audio/western.mp3');
-    audio.play();
+    // let audio = new Audio('assets/audio/western.mp3');
+    // audio.play();
   }
 
 }

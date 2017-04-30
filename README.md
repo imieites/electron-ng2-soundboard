@@ -9,7 +9,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## TO DO's
-- search throught the loaded sounds
+- search through the loaded sounds
 - button with progress bar
 - Scrap a folder for soundfiles
 - Scrap sounds from the cloud
