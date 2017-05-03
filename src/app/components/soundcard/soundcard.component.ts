@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter, Input, OnInit } from '@angular/core';
+import { SoundBoardAudio } from '../../soundBoardAudio';
 
 @Component({
   selector: 'app-soundcard',
@@ -11,10 +12,11 @@ export class SoundcardComponent implements OnInit {
 
   constructor() {}
 
-  @Input() soundName: string;
+  @Input() soundBoardAudio;
 
   ngOnInit() {
-    let audioSrc = 'assets/audio/'+this.soundName+'.mp3';
+    console.log(this.soundBoardAudio.name);
+    let audioSrc = 'assets/audio/'+this.soundBoardAudio.filename;
     this.audio = new Audio(audioSrc);
   }
 
@@ -24,16 +26,7 @@ export class SoundcardComponent implements OnInit {
 
   stopAudio() {
     this.audio.pause();
-    console.log(this.getAudioProgress());
     this.audio.currentTime = 0;
-  }
-
-  getAudioProgress(){
-    return Math.round((this.audio.currentTime/this.audio.duration)*100).toString();
-  }
-
-  isAudioPlaying(){
-    return !this.audio.paused && !this.audio.ended && 0 < this.audio.currentTime;
   }
 
 }

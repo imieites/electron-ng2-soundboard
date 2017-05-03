@@ -2,5 +2,5 @@
   {{title}} <i class="fa fa-music" aria-hidden="true"></i>
 </h1>
 <div class="container">
-  <app-soundcard soundName="western"></app-soundcard>
+  <app-soundcard *ngFor="let audio of audios" [soundBoardAudio]="audio"></app-soundcard>
 </div>

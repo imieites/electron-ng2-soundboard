@@ -5,3 +5,7 @@ h2 {
 button {
   border-radius: 0 !important;
 }
+
+.card {
+  margin-bottom: 10px;
+}

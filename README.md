@@ -13,3 +13,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 - button with progress bar
 - Scrap a folder for soundfiles
 - Scrap sounds from the cloud
+- Pack with https://www.producthunt.com/posts/create-dmg
